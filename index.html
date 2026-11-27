@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Fee Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>₹ Hidden Fee Detector</h1>
+    <p>Smart Bill Analysis System</p>
+</header>
+
+<div class="container">
+    <h2>Analyze Your Bill</h2>
+
+    <label>Bill Amount (₹)</label>
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <label>Processing Fee (₹)</label>
+    <input type="number" id="processing" value="0">
+
+    <label>Convenience Fee (₹)</label>
+    <input type="number" id="convenience" value="0">
+
+    <label>Service Fee (₹)</label>
+    <input type="number" id="service" value="0">
+
+    <label>GST (₹)</label>
+    <input type="number" id="gst" value="0">
+
+    <button onclick="detectFee()">Analyze Bill</button>
+
+    <div class="result">
+        <h3>Analysis Result</h3>
+        <p id="extra">Extra Fees: ₹0</p>
+        <p id="total">Total Amount: ₹0</p>
+        <h3 id="warning">Waiting for analysis...</h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
